@@ -7,3 +7,7 @@ Facciamo accendi e spegni:
 - Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
 - E così via...
 */
+
+//1. prendo elementi da html:
+const lamp = document.getElementById("lamp");
+const btn = document.getElementById("btn");
