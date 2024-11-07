@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/*Debug Class*/
 .debug{
     border: 1px solid red;
+}
+
+/*Container*/
+.container{
+    max-width:1400px;
+    margin: 10px auto;
+}
+
+#playground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
