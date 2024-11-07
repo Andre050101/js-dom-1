@@ -11,6 +11,7 @@ Facciamo accendi e spegni:
 //1. prendo elementi da html:
 const lamp = document.getElementById("lamp");
 const btn = document.getElementById("btn");
+const title = document.querySelector(".titleOff");
 
 //2. salvo percorsi immagini lampadina accesa e spenta:
 const lampOn = "../js-dom-1/img/yellow_lamp.png";
@@ -21,18 +22,22 @@ let statusLamp=false;
 //4. creo funzione che accende e spegne lampadina:
 function onOff(){
     if(statusLamp === false){
-       lamp.src = lampOn;
+        lamp.src = lampOn;
         lamp.classList.add("lampAccesa");
         btn.textContent = "Spegni"; 
         btn.classList.remove("btnColorOff");
-        btn.classList.add("btnColorOn")
+        btn.classList.add("btnColorOn");
+        title.classList.remove("titleOff");
+        title.classList.add("titleOn");
     }
     else{
         lamp.src = lampOff;
         lamp.classList.remove("lampAccesa");
         btn.textContent = "Accendi";
         btn.classList.remove("btnColorOn");
-        btn.classList.add("btnColorOff")
+        btn.classList.add("btnColorOff");
+        title.classList.remove("titleOn");
+        title.classList.add("titleOff");
     }
     statusLamp = !statusLamp;
 }
