@@ -13,7 +13,7 @@
 /*Container*/
 .container{
     max-width:1400px;
-    margin: 20px auto;
+    margin: 200px auto;
     
 }
 
@@ -26,23 +26,29 @@
 
 body{
     background-color: black;
+    background-image: url(../img/white-star-bg.png);
+    background-size:contain;
 }
 #title {
-    color: white;
+    color: goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Faculty Glyphic", sans-serif;
     font-size: 1.3em;
     text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+    margin: 20px auto;
 }
 
 #playground{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25%;
 }
-
+#side{
+    width: 50%;
+}
 .lampAccesa{
     transform: rotateY(180deg);
 }
