@@ -29,10 +29,7 @@ body{
     background-image: url(../img/white-star-bg.png);
     background-size:contain;
 }
-/*
-color: goldenrod;
-text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
-*/
+
 #title {
     display: flex;
     justify-content: center;
@@ -44,6 +41,8 @@ text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
 
 .titleOff{
     color: grey;
+    text-shadow: 0px 0px 10px rgba(128, 128, 128, 0.8);
+
 }
 .titleOn{
     color: goldenrod;
