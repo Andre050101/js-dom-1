@@ -24,11 +24,15 @@ function onOff(){
        lamp.src = lampOn;
         lamp.classList.add("lampAccesa");
         btn.textContent = "Spegni"; 
+        btn.classList.remove("btnColorOff");
+        btn.classList.add("btnColorOn")
     }
     else{
         lamp.src = lampOff;
         lamp.classList.remove("lampAccesa");
         btn.textContent = "Accendi";
+        btn.classList.remove("btnColorOn");
+        btn.classList.add("btnColorOff")
     }
     statusLamp = !statusLamp;
 }
