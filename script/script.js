@@ -20,16 +20,19 @@ let statusLamp=false;
 
 //4. creo funzione che accende e spegne lampadina:
 function onOff(){
-    if(statusLamp === true){
-        lamp.src = lampOff;
-        btn.textContent = "Accendi";
+    if(statusLamp === false){
+       lamp.src = lampOn;
+        lamp.classList.add("lampAccesa");
+        btn.textContent = "Spegni"; 
     }
     else{
-        lamp.src = lampOn;
-        btn.textContent = "Spegni";
+        lamp.src = lampOff;
+        lamp.classList.remove("lampAccesa");
+        btn.textContent = "Accendi";
     }
     statusLamp = !statusLamp;
 }
 
 //5. creo evento che con click su btn esegue funzione onOff:
 btn.addEventListener("click", onOff);
+
